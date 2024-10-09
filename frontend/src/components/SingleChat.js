@@ -128,7 +128,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
     selectedChatCompare = selectedChat;
     
-  }, [selectedChat]);
+  }, [selectedChat]);// eslint-disable-next-line react-hooks/exhaustive-deps
+
 
   useEffect(() => {
     socket.on("message recieved", (newMessageRecieved) => {
